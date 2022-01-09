@@ -2,23 +2,25 @@
 Class dc.data.teccod.promjetLog2021 Extends %Persistent [ ClassType = persistent, DdlAllowed, Final, Owner = {irisowner}, ProcedureBlock, SqlRowIdPrivate, SqlTableName = promjetLog2021 ]
 {
 
-Property ip As %Library.String(MAXLEN = 255) [ SqlColumnNumber = 2 ];
+Property id As %Library.AutoIncrement [ Required, SqlColumnNumber = 2 ];
 
-Property timerequest As %Library.DateTime [ SqlColumnNumber = 3, SqlFieldName = time_request ];
+Property ip As %Library.String(MAXLEN = 255) [ SqlColumnNumber = 3 ];
 
-Property method As %Library.String(MAXLEN = 255) [ SqlColumnNumber = 4 ];
+Property timerequest As %Library.DateTime [ SqlColumnNumber = 4, SqlFieldName = time_request ];
 
-Property action As %Library.String(MAXLEN = 255) [ SqlColumnNumber = 5 ];
+Property method As %Library.String(MAXLEN = 255) [ SqlColumnNumber = 5 ];
 
-Property http As %Library.String(MAXLEN = 255) [ SqlColumnNumber = 6 ];
+Property action As %Library.String(MAXLEN = 255) [ SqlColumnNumber = 6 ];
 
-Property statuscode As %Library.Integer(MAXVAL = 2147483647, MINVAL = -2147483648) [ SqlColumnNumber = 7, SqlFieldName = status_code ];
+Property http As %Library.String(MAXLEN = 255) [ SqlColumnNumber = 7 ];
 
-Property size As %Library.Integer(MAXVAL = 2147483647, MINVAL = -2147483648) [ SqlColumnNumber = 8 ];
+Property statuscode As %Library.Integer(MAXVAL = 2147483647, MINVAL = -2147483648) [ SqlColumnNumber = 8, SqlFieldName = status_code ];
 
-Property url As %Library.String(MAXLEN = 255) [ SqlColumnNumber = 9 ];
+Property size As %Library.Integer(MAXVAL = 2147483647, MINVAL = -2147483648) [ SqlColumnNumber = 9 ];
 
-Property platform As %Library.String(MAXLEN = 255) [ SqlColumnNumber = 10 ];
+Property url As %Library.String(MAXLEN = 255) [ SqlColumnNumber = 10 ];
+
+Property platform As %Library.String(MAXLEN = 255) [ SqlColumnNumber = 11 ];
 
 Parameter DEFAULTGLOBAL = "^dc.data.teccod.promjetLog2021";
 
@@ -31,32 +33,36 @@ Index DDLBEIndex [ Extent, SqlName = "%%DDLBEIndex", Type = bitmap ];
 
 Storage Default
 {
+<CounterLocation>^dc.data.teccod.promjetLog2021C</CounterLocation>
 <Data name="promjetLog2021DefaultData">
 <Value name="1">
-<Value>ip</Value>
+<Value>id</Value>
 </Value>
 <Value name="2">
-<Value>timerequest</Value>
+<Value>ip</Value>
 </Value>
 <Value name="3">
-<Value>method</Value>
+<Value>timerequest</Value>
 </Value>
 <Value name="4">
-<Value>action</Value>
+<Value>method</Value>
 </Value>
 <Value name="5">
-<Value>http</Value>
+<Value>action</Value>
 </Value>
 <Value name="6">
-<Value>statuscode</Value>
+<Value>http</Value>
 </Value>
 <Value name="7">
-<Value>size</Value>
+<Value>statuscode</Value>
 </Value>
 <Value name="8">
-<Value>url</Value>
+<Value>size</Value>
 </Value>
 <Value name="9">
+<Value>url</Value>
+</Value>
+<Value name="10">
 <Value>platform</Value>
 </Value>
 </Data>
