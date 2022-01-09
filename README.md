@@ -36,3 +36,6 @@ This dataset has a tool that translates a log file into a table. The function ta
 ```
 $ d ##class(utils.utils).LogGenerate("dc.data.teccod.promjetLog2021", "/irisdev/app/src/data/promjetDec2021.log")
 ```
+
+An example of data usage can be found in the package https://openexchange.intersystems.com/package/promjet-stats
+http://localhost:32792/dsw/index.html#/IRISAPP/Dashboard/Apache%20Log%20example.dashboard
