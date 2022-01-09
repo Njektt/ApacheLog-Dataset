@@ -7,7 +7,7 @@ The template contains a very basic example of the BI solution which contains one
 ### ZPM
 It's packaged with ZPM so it could be installed as:
 ```
-zpm "install iris-analytics-sample"
+zpm "install Dataset-ApacheLog"
 ```
 
 ### Docker
