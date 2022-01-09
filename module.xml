@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="Cache" version="25">
+  <Document name="iris-analytics-sample.ZPM">
+    <Module>
+      <Name>iris-analytics-sample</Name>
+      <Version>1.0.0</Version>
+      <Packaging>module</Packaging>
+      <SourcesRoot>src</SourcesRoot>
+      <Resource Name="data.teccod.PKG" Directory="dc"/>
+      <Resource Name="utils.PKG"/>
+      <Resource Name="dc.data.teccod.GBL"/>
+      <Invoke Class="utils.utils" Method="import"></Invoke>
+    </Module>
+  </Document>
+</Export>
