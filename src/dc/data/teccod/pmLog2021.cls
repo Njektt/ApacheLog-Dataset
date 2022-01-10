@@ -1,5 +1,5 @@
 /// 
-Class dc.data.teccod.promjetLog2021 Extends %Persistent [ ClassType = persistent, DdlAllowed, Final, Owner = {irisowner}, ProcedureBlock, SqlRowIdPrivate, SqlTableName = promjetLog2021 ]
+Class dc.data.teccod.pmLog2021 Extends %Persistent [ ClassType = persistent, DdlAllowed, Final, Owner = {irisowner}, ProcedureBlock, SqlRowIdPrivate, SqlTableName = pmLog2021 ]
 {
 
 Property id As %Library.AutoIncrement [ Required, SqlColumnNumber = 2 ];
@@ -22,7 +22,7 @@ Property url As %Library.String(MAXLEN = 255) [ SqlColumnNumber = 10 ];
 
 Property platform As %Library.String(MAXLEN = 255) [ SqlColumnNumber = 11 ];
 
-Parameter DEFAULTGLOBAL = "^dc.data.teccod.promjetLog2021";
+Parameter DEFAULTGLOBAL = "^dc.data.teccod.pmLog2021";
 
 Parameter MANAGEDEXTENT = 0;
 
@@ -33,8 +33,8 @@ Index DDLBEIndex [ Extent, SqlName = "%%DDLBEIndex", Type = bitmap ];
 
 Storage Default
 {
-<CounterLocation>^dc.data.teccod.promjetLog2021C</CounterLocation>
-<Data name="promjetLog2021DefaultData">
+<CounterLocation>^dc.data.teccod.pmLog2021C</CounterLocation>
+<Data name="pmLog2021DefaultData">
 <Value name="1">
 <Value>id</Value>
 </Value>
@@ -66,20 +66,20 @@ Storage Default
 <Value>platform</Value>
 </Value>
 </Data>
-<DataLocation>^dc.data.teccod.promjetLog2021.1</DataLocation>
-<DefaultData>promjetLog2021DefaultData</DefaultData>
-<ExtentLocation>^dc.data.teccod.promjetLog2021</ExtentLocation>
+<DataLocation>^dc.data.teccod.pmLog2021.1</DataLocation>
+<DefaultData>pmLog2021DefaultData</DefaultData>
+<ExtentLocation>^dc.data.teccod.pmLog2021</ExtentLocation>
 <ExtentSize>0</ExtentSize>
 <IdFunction>sequence</IdFunction>
-<IdLocation>^dc.data.teccod.promjetLog2021.1</IdLocation>
+<IdLocation>^dc.data.teccod.pmLog2021.1</IdLocation>
 <Index name="DDLBEIndex">
-<Location>^dc.data.teccod.promjetLog2021.2</Location>
+<Location>^dc.data.teccod.pmLog2021.2</Location>
 </Index>
 <Index name="IDKEY">
-<Location>^dc.data.teccod.promjetLog2021.1</Location>
+<Location>^dc.data.teccod.pmLog2021.1</Location>
 </Index>
-<IndexLocation>^dc.data.teccod.promjetLog2021.I</IndexLocation>
-<StreamLocation>^dc.data.teccod.promjetLog2021.S</StreamLocation>
+<IndexLocation>^dc.data.teccod.pmLog2021.I</IndexLocation>
+<StreamLocation>^dc.data.teccod.pmLog2021.S</StreamLocation>
 <Type>%Storage.Persistent</Type>
 }
 
