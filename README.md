@@ -41,7 +41,6 @@ http://atscale.teccod.ru:32792/dsw/index.html#/IRISAPP/Dashboard/Apache%20Log%20
 
 An example of data usage can be found in the package 
 https://openexchange.intersystems.com/package/promjet-stats
-http://localhost:32792/dsw/index.html#/IRISAPP/Dashboard/Apache%20Log%20example.dashboard
 
 ![image](https://user-images.githubusercontent.com/47400570/148698770-5fea5b7d-f109-4da3-9997-a42a053f6767.png)
 
