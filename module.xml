@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Export generator="Cache" version="25">
-  <Document name="Dataset-ApacheLog.ZPM">
+  <Document name="dataset-apachelog.ZPM">
     <Module>
-      <Name>Dataset-ApacheLog</Name>
-      <Version>1.0.1</Version>
+      <Name>dataset-apachelog</Name>
+      <Version>1.0.2</Version>
       <Packaging>module</Packaging>
       <SourcesRoot>src</SourcesRoot>
       <Resource Name="data.teccod.PKG" Directory="dc"/>
