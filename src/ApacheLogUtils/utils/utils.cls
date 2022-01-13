@@ -1,19 +1,43 @@
-Class utils.utils
+Class ApacheLogUtils.utils.utils
 {
 
 ClassMethod LogGenerate(className, path) As %Status
 {
-    set infSchema = $REPLACE($piece(className, ".",0, *-1), ".","_")
-    set tableName = infSchema_"."_$piece(className, ".", *)
-    set query = "CREATE TABLE "_tableName_" (id int NOT NULL AUTO_INCREMENT, ip varchar(255), time_request datetime, method varchar(255), action varchar(255), http varchar(255), status_code int, size int, url varchar(255), platform varchar(255)) WITH %CLASSPARAMETER DEFAULTGLOBAL = '^"_className_"', %CLASSPARAMETER MANAGEDEXTENT 0"
-    d ##class(%SQL.Statement).%ExecDirect(,query)
-    set del = ","
-    set fileName = $ZDATETIME($h,-2)_tableName_".txt"
+    set tableName = ..GenerateTableName(className)
+    do ..CreateTable(tableName, className)
     set stream = ##class(%Stream.FileCharacter).%New()
-    set sc = stream.LinkToFile(path)
+    do stream.LinkToFile(path)
+    do ..LoadData(stream, tableName, className)
+}
+
+ClassMethod LogGenerateURL(className As %String, stream) As %Status
+{
+    set tableName = ..GenerateTableName(className)
+    do ..CreateTable(tableName, className)
+    do ..LoadData(stream, tableName, className)
+    quit $$$OK
+}
+
+ClassMethod GenerateTableName(className) As %String
+{
+    set infSchema = $REPLACE($piece(className, ".",0, *-1), ".","_")
+    return infSchema_"."_$piece(className, ".", *)
+}
+
+ClassMethod CreateTable(tableName, className) As %Status
+{
+    set query = "CREATE TABLE "_tableName_" (id INT NOT NULL AUTO_INCREMENT, ip varchar(255), time_request datetime, method varchar(255), action varchar(255), http varchar(255), status_code int, size int, url varchar(255), platform varchar(255), PRIMARY KEY (id)) WITH %CLASSPARAMETER DEFAULTGLOBAL = '^"_className_"', %CLASSPARAMETER MANAGEDEXTENT 0"
+    set res = ##class(%SQL.Statement).%ExecDirect(,query)
+    quit $$$OK
+}
+
+ClassMethod LoadData(stream As %FileCharacterStream, tableName, className) As %SQLQuery
+{
+    set del = ","
+    set iter = 0
+    set fileName = $ZDATETIME($h,-2)_tableName_".txt"
     Set file = ##class(%File).%New("/irisdev/app/src/data/"_fileName)
     Do file.Open("WSN")
-    set iter = 0
 
     while 'stream.AtEnd {
         set str = stream.ReadLine()

@@ -11,3 +11,4 @@ services:
       - 53773
     volumes:
       - ./:/irisdev/app
+      - ./src/csp:/usr/irissys/csp/irisdev/

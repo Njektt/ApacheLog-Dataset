@@ -1,0 +1,123 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    background-color: #EDF3FB;
+}
+
+.main-page{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.upload-block{
+    width: 600px;
+    height: 400px;
+    display: block;
+    background-color: white;
+    position: relative;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.submit-button{
+    width: 100%;
+    height: 50px;
+    background-color: #2F80EC;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.classname-input{
+    height: 50px;
+    font-weight: 700;
+    width: 100%;
+    margin-bottom: 20px;
+    position: relative;
+    margin-top: 50px;
+    font-size: 18px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: none;
+    background-color: #EDF3FB;
+    border-radius: 2px;
+    border-bottom: 2px solid gray;
+    outline: none;
+}
+
+.dropzone {
+	width: 550px;
+	height: 200px;
+    top: 25px;
+    position: relative;
+	border: 2px dashed #999;
+	border-radius: 10px;
+	text-align: center;
+    transition: 0.2s ease-in-out;
+}
+
+.dropzone h1{
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.upload-inputfile {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+    left: 0;
+    top: 0;
+	opacity: 0;
+}
+
+.dropzone:hover{
+    background-color: #2196f30f;
+    border: 2px dashed #999;
+}
+
+.form-submitfile{
+    width: 60%;
+}
+
+.console-block{
+    width: 600px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    background-color: rgb(211, 211, 211);
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 5px;
+    background-color: white;
+}
+
+.console-header{
+    background-color: thistle;
+    font-size: 1rem;
+    background-color: rgba(0, 0, 0, 0.03);
+    border-bottom: 1px solid rgba(0,0,0,.125);
+    padding: .75rem 1.25rem;
+    box-sizing: border-box;
+}
+
+.console-body{
+    list-style: none;
+    font-size: 14px;
+    overflow-y: scroll !important;
+    min-height: 180px;
+    max-height: 180px;
+    padding: 10px;
+}

@@ -34,7 +34,7 @@ d ##class(dev.code).export("*.DFI")
 
 ```
 do ##class(%DeepSee.Utils).%BuildCube("CubeName")
-d ##class(utils.utils).LogGenerate("dc.data.teccod.promjetLog2021", "/irisdev/app/src/data/promjetDec2021.log")
+d ##class(ApacheLogUtils.utils.utils).LogGenerate("dc.data.teccod.pmLog2021", "/irisdev/app/src/data/promjetDec2021.log")
 ```
 
 ## export globals

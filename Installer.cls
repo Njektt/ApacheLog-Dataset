@@ -5,16 +5,13 @@ XData setup
 {
 <Manifest>
   <Default Name="Namespace" Value="IRISAPP"/>
+  <Default Name="APPPATH" Dir="/opt/irisapp/"/>
   <Default Name="app" Value="irisapp" />
 
   <Namespace Name="${Namespace}" Code="${Namespace}" Data="${Namespace}" Create="yes" Ensemble="0">
-
     <Configuration>
       <Database Name="${Namespace}" Dir="/opt/${app}/data" Create="yes" Resource="%DB_${Namespace}"/>
     </Configuration>
-    <CSPApplication Url="/csp/${app}" Directory="${cspdir}${app}"  ServeFiles="1" Recurse="1" MatchRoles=":%DB_${Namespace}" AuthenticationMethods="32"
-       
-    />
   </Namespace>
 
 </Manifest>
