@@ -30,12 +30,21 @@ $ docker-compose up -d
 93.84.69.xx - - [30/Nov/2021:15:12:47 +0300] "GET /favicon.ico HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 5.1; rv:52.0) Gecko/20100101 Firefox/52.0"
 93.84.69.xx - - [30/Nov/2021:15:12:49 +0300] "GET /favicon.ico HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 5.1; rv:52.0) Gecko/20100101 Firefox/52.0"
 ```
+## UI Uploader
+
+For convenience, a graphical loader for the melon set has been added, link to the graphical loader: http://localhost:32792/csp/apacheutils/index.html.
+Below is an example of the work of the graphic loader
+
+https://user-images.githubusercontent.com/47400570/149420373-fbe213ca-0e66-4f69-ad76-3d93a3219eed.mp4
+
 ## Utils
+
 This dataset has a tool that translates a log file into a table. The function takes 2 parameters, the first parameter is the name of the class, for example dc.data.teccod.promjetLog2021, the second parameter is the path to the log file.
 
 ```
 $ d ##class(ApacheLogUtils.utils.utils).LogGenerate("dc.data.teccod.promjetLog2021", "/irisdev/app/src/data/promjetDec2021.log")
 ```
+
 Online demo of data use can be viewed here :
 http://atscale.teccod.ru:32792/dsw/index.html#/IRISAPP/Dashboard/Apache%20Log%20example.dashboard
 
