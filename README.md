@@ -35,7 +35,8 @@ $ docker-compose up -d
 For convenience, a graphical loader for the melon set has been added, link to the graphical loader: http://localhost:32792/csp/apacheutils/index.html.
 Below is an example of the work of the graphic loader
 
-https://user-images.githubusercontent.com/47400570/149420373-fbe213ca-0e66-4f69-ad76-3d93a3219eed.mp4
+
+![Preview](https://user-images.githubusercontent.com/47400570/149420448-10cc6705-c6e4-4945-93a7-2630cddaaa9e.gif)
 
 ## Utils
 
