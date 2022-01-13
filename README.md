@@ -34,14 +34,13 @@ $ docker-compose up -d
 This dataset has a tool that translates a log file into a table. The function takes 2 parameters, the first parameter is the name of the class, for example dc.data.teccod.promjetLog2021, the second parameter is the path to the log file.
 
 ```
-$ d ##class(utils.utils).LogGenerate("dc.data.teccod.promjetLog2021", "/irisdev/app/src/data/promjetDec2021.log")
+$ d ##class(ApacheLogUtils.utils.utils).LogGenerate("dc.data.teccod.promjetLog2021", "/irisdev/app/src/data/promjetDec2021.log")
 ```
 Online demo of data use can be viewed here :
 http://atscale.teccod.ru:32792/dsw/index.html#/IRISAPP/Dashboard/Apache%20Log%20example.dashboard
 
 An example of data usage can be found in the package 
 https://openexchange.intersystems.com/package/promjet-stats
-http://localhost:32792/dsw/index.html#/IRISAPP/Dashboard/Apache%20Log%20example.dashboard
 
 ![image](https://user-images.githubusercontent.com/47400570/148698770-5fea5b7d-f109-4da3-9997-a42a053f6767.png)
 
