@@ -8,6 +8,7 @@ ClassMethod LogGenerate(className, path) As %Status
     set stream = ##class(%Stream.FileCharacter).%New()
     do stream.LinkToFile(path)
     do ..LoadData(stream, tableName, className)
+    quit $$$OK
 }
 
 ClassMethod LogGenerateURL(className As %String, stream) As %Status
