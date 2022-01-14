@@ -57,9 +57,9 @@ ClassMethod LoadData(stream As %FileCharacterStream, tableName, className)
     }
 
     set loadQuery = "LOAD DATA FROM FILE '/irisdev/app/src/data/"_fileName_"' INTO " _tableName_ "(ip, time_request, method, action, http, status_code, size, url, platform)"
-    Set qHandle = ##class(%SQL.Statement).%ExecDirect(,loadQuery)
-    d ##class(%Library.File).Delete("/irisdev/app/src/data/"_fileName)
-    d $System.OBJ.Compile(className,"cuk")
+    do ##class(%SQL.Statement).%ExecDirect(,loadQuery)
+    do ##class(%Library.File).Delete("/irisdev/app/src/data/"_fileName)
+    do $System.OBJ.Compile(className,"cuk")
     write "Records imported : "_iter,!
     write "Class name : "_className,!
     write "Table name : "_tableName
@@ -67,7 +67,7 @@ ClassMethod LoadData(stream As %FileCharacterStream, tableName, className)
 
 ClassMethod import()
 {
-    set sc = $System.OBJ.Compile("dc.data.teccod.*","cuk")
+    do $System.OBJ.Compile("dc.data.teccod.*","cuk")
 }
 
 }
