@@ -3,7 +3,8 @@
     
     zn "IRISAPP"
     do $System.OBJ.LoadDir("/opt/irisapp/src","ck",,1)
-    zpm "load /opt/irisapp/ -v":1:1
+    do EnableDeepSee^%SYS.cspServer("/csp/irisapp/")
+    zpm "load /opt/irisapp/ -v -Dfolder=irisapp"
     
     zn "%SYS"
     Do ##class(Security.Users).UnExpireUserPasswords("*")

@@ -12,7 +12,6 @@
       <Resource Name="dc.data.teccod.GBL"/>
       <Invoke Class="ApacheLogUtils.utils.utils" Method="import"></Invoke>
 
-      
       <CSPApplication 
         CookiePath="/csp/apacheutils/"
         DefaultTimeout="900"
