@@ -57,6 +57,7 @@
         formData.append('classname', $('.classname-input').val());
 
         $('.upload-inputfile').val("");
+        $('.console-body').append("<pre style='margin-bottom: 10px'>Load started...</pre>")
 
         $.ajax({
             url: '/api/apacheutils/import',
@@ -65,7 +66,7 @@
             contentType: false,
             type: 'POST',
             success: function (data) {
-                $('.console-body').append("<pre style='margin-bottom: 10px'>" + data + "</pre>")
+                $('.console-body').append("<pre style='margin-bottom: 10px'>" + data + "</pre>");
             },
             error: function (data) {
                 $('.console-body').append("<p>File loaded : " + JSON.stringify(data) + "</span>");
