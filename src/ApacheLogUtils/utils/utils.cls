@@ -28,7 +28,7 @@ ClassMethod GenerateTableName(className) As %String
 ClassMethod CreateTable(tableName, className) As %Status
 {
     set query = "CREATE TABLE "_tableName_" (id INT NOT NULL AUTO_INCREMENT, ip varchar(255), time_request datetime, method varchar(255), action varchar(255), http varchar(255), status_code int, size int, url varchar(255), platform varchar(255), PRIMARY KEY (id)) WITH %CLASSPARAMETER DEFAULTGLOBAL = '^"_className_"', %CLASSPARAMETER MANAGEDEXTENT 0"
-    set res = ##class(%SQL.Statement).%ExecDirect(,query)
+    do ##class(%SQL.Statement).%ExecDirect(,query)
     quit $$$OK
 }
 
