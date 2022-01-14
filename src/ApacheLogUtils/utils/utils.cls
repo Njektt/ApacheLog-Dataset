@@ -31,7 +31,7 @@ ClassMethod CreateTable(tableName, className) As %Status
     quit $$$OK
 }
 
-ClassMethod LoadData(stream As %FileCharacterStream, tableName, className) As %SQLQuery
+ClassMethod LoadData(stream As %FileCharacterStream, tableName, className)
 {
     set del = ","
     set iter = 0

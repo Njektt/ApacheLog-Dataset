@@ -20,7 +20,6 @@ body{
 .upload-block{
     width: 600px;
     height: 400px;
-    display: block;
     background-color: white;
     position: relative;
     border-radius: 10px;
@@ -98,14 +97,12 @@ body{
     display: flex;
     flex-direction: column;
     margin-top: 20px;
-    background-color: rgb(211, 211, 211);
     border: 1px solid rgba(0,0,0,.125);
     border-radius: 5px;
     background-color: white;
 }
 
 .console-header{
-    background-color: thistle;
     font-size: 1rem;
     background-color: rgba(0, 0, 0, 0.03);
     border-bottom: 1px solid rgba(0,0,0,.125);
