@@ -32,7 +32,7 @@ $ docker-compose up -d
 ```
 ## UI Uploader
 
-For convenience, a graphical loader for the melon set has been added, link to the graphical loader: http://localhost:32792/csp/apacheutils/index.html.
+For convenience, a graphical loader for the dataset has been added, link to the graphical loader: http://localhost:32792/csp/apacheutils/index.html.
 Below is an example of the work of the graphic loader
 
 
