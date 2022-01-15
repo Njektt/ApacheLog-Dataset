@@ -11,6 +11,9 @@
       <Resource Name="ApacheLogUtils.PKG"/>
       <Resource Name="dc.data.teccod.GBL"/>
       <Invoke Class="ApacheLogUtils.utils.utils" Method="import"></Invoke>
+      <Invoke Class="%DeepSee.Utils" Method="%BuildCube">
+          <Arg>pmLog2021Cube</Arg>
+      </Invoke>
 
       <CSPApplication 
         CookiePath="/csp/apacheutils/"
