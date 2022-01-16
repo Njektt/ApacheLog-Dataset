@@ -56,3 +56,7 @@ https://openexchange.intersystems.com/package/promjet-stats
 
 ![image](https://user-images.githubusercontent.com/47400570/148698957-4e9e25a5-f1fc-4f62-833a-f6c7b2310935.png)
 
+Also you can read an Article on Developer Community Portal https://community.intersystems.com/post/real-webserver-logs-dataset and the second one https://community.intersystems.com/post/your-own-webserver-logfile-analyser
+
+And watch my video on Youtube https://youtu.be/Y7TeKR-Kifw
+
